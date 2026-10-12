@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: #192536;
+    padding: 15px;
+}
+
+.site-title {
+    color:white;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+    max-width: 100%;
+    height: auto;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li:nth-child(odd) {
+    background-color: #ec0a0a;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid white;
+    color: #192536;
+    padding: 6px 12px;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 4px;
+}
