@@ -4,19 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gran0578 midterm</title>
+    <!-- Link to main.css stylesheet -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <!-- image with heading positioned on top -->
-        <header>
-            <h1></h1>
-            <img src="" img alt="">
-        </header>
-        <!-- nav in a line -->
+    <!-- Header Section... The Image with the title placed on top -->
+   <header class="site-header">
+        <div class="header-image-container">
+            <img src="images/header-honeycat.jpg" alt="My cat Honey laying on the bed">
+            <h1 class="site-title">Honey</h1>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="content-container">
+        
+        <!-- Article Section with text wrapping around image -->
+        <article class="main-article">
+            <h2>Life of my Cat</h2>
+            <div class="article-body">
+                <img src="images/article-honeycat.JPG" alt="Honey's face up to the camera" class="article-img">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium hic accusantium quo, architecto numquam expedita labore vel sit, animi est tempore, deserunt cumque eius consequuntur ratione mollitia sapiente ipsum sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id libero modi pariatur dignissimos ex accusamus, cum, repellendus porro ullam corrupti asperiores quisquam sint possimus nam eos at, harum vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione facilis ducimus maiores fugit dolores iste corrupti, provident ipsum ipsam nesciunt temporibus nam nemo sed eaque eius quis assumenda, doloribus in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus veritatis vero fuga id? Qui a odio vero aliquam similique, voluptate quo quibusdam quia architecto non molestias! Pariatur, ipsum a.
+                </p>
+            </div>
+        </article>
 
-        <!-- article of text with image in line -->
-    </div>
+        <!-- Facts Section: Proper list syntax -->
+        <section class="facts-section">
+            <h2>Facts About Honey</h2>
+            <ul class="facts-list">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptate dolorum a hic sequi beatae adipisci, placeat veritatis voluptatibus doloribus, iste exercitationem itaque nisi repudiandae, id vel voluptas. Placeat, neque.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti quam quaerat, repudiandae vero harum ducimus voluptatem veritatis minus mollitia sapiente beatae, quidem impedit debitis, qui obcaecati nam nulla quasi?</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum inventore nisi accusantium placeat debitis vero sapiente qui alias, et deserunt atque distinctio maxime vel. Officia laudantium sint sed? Aliquam, vitae?</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum explicabo enim libero omnis! Possimus facilis eius dolorum ut provident minus voluptatibus, nam distinctio voluptatem dicta at recusandae quam, enim labore?</li>
+            </ul>
+        </section>
+
+        <!-- Form Section: Inputs linked to relative labels -->
+        <section class="contact-section" id="contact">
+            <h2>Contact to learn more</h2>
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <fieldset class="radio-group">
+                    <legend>Would you like to pet Honey?</legend>
+                    <div class="radio-options">
+                        <label><input type="radio" name="visit" value="yes"> Yes</label>
+                        <label><input type="radio" name="visit" value="no"> No</label>
+                        <label><input type="radio" name="visit" value="maybe"> WHAT KINDA QUESTION IS THAT???</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">SEND</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer of the page -->
+    <footer class="site-footer">
+        <p>&copy; Honey.</p>
+    </footer>
+
 </body>
 </html>
