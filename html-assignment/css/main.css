@@ -40,10 +40,22 @@ nav a {
     display: inline-block;
     margin: 4px;
     border-radius: 4px;
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 nav a:hover, nav a:focus {
     background-color: gray;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 }
 
+
+.hobbies-list {
+    list-style: square;
+}
+
+.hobbies-list li:nth-child(odd) {
+background-color: gray;
+padding: 4px;
+}
