@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div class="wrapper">
+
     <!-- Header Section... The Image with the title placed on top -->
    <header class="site-header">
         <div class="header-image-container">
             <img src="images/header-honeycat.jpg" alt="My cat Honey laying on the bed">
             <h1 class="site-title">Honey</h1>
         </div>
+    </header>
         
         <!-- Navigation Menu -->
         <nav class="main-nav">
@@ -23,13 +27,14 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-    </header>
+
 
     <main class="content-container">
         
         <!-- Article Section with text wrapping around image -->
         <article class="main-article">
             <h2>Life of my Cat</h2>
+
             <div class="article-body">
                 <img src="images/article-honeycat.JPG" alt="Honey's face up to the camera" class="article-img">
                 <p>
@@ -52,8 +57,8 @@
         <!-- Form Section: Inputs linked to relative labels -->
         <section class="contact-section" id="contact">
             <h2>Contact to learn more</h2>
+
             <form action="#" method="POST" class="contact-form">
-                
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -66,17 +71,17 @@
 
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
 
-                <fieldset class="radio-group">
-                    <legend>Would you like to pet Honey?</legend>
+                <div class="radio-group">
+                    <label class="radio-title">Would you like to pet Honey?</label>
                     <div class="radio-options">
                         <label><input type="radio" name="visit" value="yes"> Yes</label>
                         <label><input type="radio" name="visit" value="no"> No</label>
                         <label><input type="radio" name="visit" value="maybe"> WHAT KINDA QUESTION IS THAT???</label>
                     </div>
-                </fieldset>
+                </div>
 
                 <button type="submit" class="submit-btn">SEND</button>
             </form>
@@ -86,7 +91,9 @@
 
     <!-- Footer of the page -->
     <footer class="site-footer">
-        <p>&copy; Honey.</p>
+        <p>&copy; Honey.
+        </p>
+        
     </footer>
 
 </body>
