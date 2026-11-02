@@ -15,7 +15,7 @@ body {
     max-width: 820px;
     margin: 0 auto;
     background-color: #d96b43;
-    box-shadow: 0 4px 20px tgba(180, 75, 20, 0.08);
+    box-shadow: 0 4px 20px rgba(180, 75, 20, 0.08);
 }
 
 .content-container {
